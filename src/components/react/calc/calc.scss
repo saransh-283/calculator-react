@@ -1,0 +1,16 @@
+#calc {
+    display: grid;
+    grid-template-areas:
+        'histDisp histDisp histDisp histDisp'
+        'mainDisp mainDisp mainDisp mainDisp'
+        'ac ac divide multiply'
+        'seven eight nine minus'
+        'four five six add'
+        'one two three equal'
+        'zero zero decimal equal'
+    ;
+    row-gap: 1px;
+    column-gap: 1px;
+    padding: 10px;
+    background: black;
+}
