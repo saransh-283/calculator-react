@@ -3,19 +3,19 @@ import '../display/display.scss'
 
 class Display extends React.Component{
     render(){
-        return <div></div>
+        return <div className="display" id={this.props.name} style={{gridArea: this.props.area}}>{this.props.text}</div>
     }
 }
 
 class HistDisp extends React.Component{
     render(){
-        return <Display id="histdisp" />
+        return <Display name="histdisp" text={this.props.hist} area={this.props.area}/>
     }
 }
 
 class MainDisp extends React.Component{
     render(){
-        return <Display id="maindisp" />
+        return <Display text={this.props.main} name="maindisp" area={this.props.area}/>
     }
 }
 
