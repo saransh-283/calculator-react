@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log('start')
+
+        // bake your code here
+        const questions = [
+            [6, 3],
+            [11, 1],
+            [13, 4],
+            [27, 1],
+            [18, 2]
+        ]
+
+        function difficultyLevel([marks, subparts]) {
+            return subparts + (1 - (marks / (subparts * 100)))
+        }
+        //more level more easy
+
+        var minmarks = 75
+
+        function easyQustPickStdent(q, l) {
+            var current = 15
+            var picked = []
+
+
+
+            return (picked)
+        }
+
+
+        const levelArr = questions.map(elem => difficultyLevel(elem))
+
+        console.log(easyQustPickStdent(questions, levelArr))
+    </script>
+</body>
+
+</html>
